@@ -1,7 +1,6 @@
 ---
-title: Um resumo das minhas leituras de 2024
-feed: show
-date:   2024-12-16 11:38:16 -0300
+title: "Um resumo das minhas leituras de 2024"
+date:   2024-12-16
 ---
 
 Hoje eu alcancei a marca de 13 livros novos lidos no ano. A lista foi, em ordem cronológica:

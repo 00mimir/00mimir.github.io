@@ -1,7 +1,8 @@
 ---
-title:  Some thoughts after finishing first ASOIAF reread
-feed: show
-date:   2025-04-13 14:14:54 -0300
+title:  "Some thoughts after finishing first ASOIAF reread"
+date:   2025-04-13
+# categories: [jekyll, digital-garden]
+# tags: [welcome, introduction]
 ---
 
 This post was first published on reddit. Here is the [link](https://www.reddit.com/r/asoiaf/comments/1jycoso/spoilers_extended_some_thoughts_after_finishing/)
