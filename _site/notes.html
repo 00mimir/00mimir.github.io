@@ -62,7 +62,11 @@
               if (!contentDiv) return;
           
               // Get all available notes for link resolution
-              const availableNotes = [];
+              const availableNotes = [{
+                          title: "Fevre Dream Anotado Previa",
+                          url: "/notes/fevre-dream-anotado-previa",
+                          excerpt: "Desde que comprei o livro O Hobbit Anotado, antes mesmo de ler (mal comecei a ler o livro enquanto estou..."
+                      }];
           
               // Function to find note by title (case-insensitive)
               function findNoteByTitle(title) {
@@ -204,6 +208,11 @@
         <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
         <script src="/assets/js/Search.js"></script><!-- feed with filter-->
         <div class="related-wrapper">
+          <div class="notelist-feed">
+            <a href="/notes/fevre-dream-anotado-previa">
+              <p>Fevre Dream Anotado Previa</p>
+            </a>
+          </div>
         </div>
         <!--- Notes Layout--><!--- Post Layout--><!--- Static Page Layout--><!--- Blog Feed Layout-->
         <div class="footer">
