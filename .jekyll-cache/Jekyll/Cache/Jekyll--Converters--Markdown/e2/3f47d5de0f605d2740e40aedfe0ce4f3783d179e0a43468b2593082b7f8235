@@ -1,0 +1,26 @@
+I"�	<h1 id="credits-and-acknowledgments">Credits and Acknowledgments</h1>
+
+<p>Jekyll Garden wouldn’t exist without the contributions of many talented developers and designers. Here’s who made it possible:</p>
+
+<h2 id="development-and-inspiration">Development and Inspiration</h2>
+
+<p>The foundation of Jekyll Garden comes from the work of several key individuals. <strong><a href="https://github.com/rgvr">Raghuveer</a></strong> created the <a href="https://github.com/rgvr/simply-jekyll">Simply Jekyll theme</a> that served as the foundation for this project, providing the initial structure and design principles. <strong><a href="https://github.com/santhoshtr">Santosh Thottingal</a></strong> introduced the concept of Digital Gardens and inspired the wiki-linking approach that makes Jekyll Garden unique.</p>
+
+<p>The development involved several contributors who brought their expertise to different aspects. <strong><a href="https://github.com/asimkt">Asim K T</a></strong> coded the base HTML structure and implemented the core Jekyll Garden functionality. <strong><a href="https://github.com/ershad">Ershad</a></strong> provided invaluable help with Jekyll and Ruby development. <strong><a href="https://github.com/anishsheela">Anish</a></strong> contributed JavaScript improvements and bug fixes. <strong><a href="https://github.com/aashiks">Puttalu</a></strong> provided OrgMode expertise and guidance.</p>
+
+<p>The <strong><a href="https://obsidian.md/">Team Obsidian</a></strong> deserves special recognition for creating the amazing markdown-based knowledge management tool that inspired the wiki-link syntax we use throughout the theme.</p>
+
+<h2 id="technologies">Technologies</h2>
+
+<ul>
+  <li><strong>Highlight themes</strong> from <a href="https://github.com/jwarby/jekyll-pygments-themes">Jekyll Pygment Themes</a></li>
+  <li><strong><a href="https://jekyllrb.com/">Jekyll</a></strong> - The static site generator that powers everything</li>
+  <li><strong><a href="https://lunrjs.com/">Lunr.js</a></strong> - Client-side search functionality</li>
+  <li><strong><a href="https://katex.org/">KaTeX</a></strong> - Math expression rendering</li>
+  <li><strong><a href="https://rsms.me/inter/">Inter font</a></strong> - Typography by Rasmus Andersson</li>
+</ul>
+
+<hr />
+
+<p><em>Jekyll Garden is open source and welcomes contributions. If you’d like to help improve the theme, please visit the <a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io">GitHub repository</a>.</em></p>
+:ET

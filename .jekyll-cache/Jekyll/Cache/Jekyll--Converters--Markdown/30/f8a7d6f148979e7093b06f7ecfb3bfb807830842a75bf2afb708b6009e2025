@@ -1,0 +1,87 @@
+I"<p>Here’s how to set up Jekyll Garden to work seamlessly with Obsidian.</p>
+
+<h2 id="use-_notes-as-your-vault">Use <code class="highlighter-rouge">_notes</code> as Your Vault</h2>
+
+<p>The simplest approach is to use the <code class="highlighter-rouge">_notes</code> folder as your Obsidian vault:</p>
+
+<ol>
+  <li><strong>Open Obsidian</strong></li>
+  <li><strong>Create a new vault</strong> or open existing vault</li>
+  <li><strong>Set the vault location</strong> to the <code class="highlighter-rouge">_notes</code> folder in your Jekyll Garden project</li>
+</ol>
+
+<p>This way, all your notes are automatically part of your website.</p>
+
+<h2 id="front-matter-requirements">Front Matter Requirements</h2>
+
+<p>All notes must use the proper front matter format:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Note</span><span class="nv"> </span><span class="s">Title"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-01-15</span>
+<span class="na">feed</span><span class="pi">:</span> <span class="s2">"</span><span class="s">show"</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">feed: "show"</code> setting makes the note appear on your website. Use <code class="highlighter-rouge">feed: "hide"</code> for private notes.</p>
+
+<h2 id="git-ignore-setup">Git Ignore Setup</h2>
+
+<p>Add these folders to your <code class="highlighter-rouge">.gitignore</code> file:</p>
+
+<pre><code class="language-gitignore"># Obsidian settings
+.obsidian/
+.trash/
+
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+</code></pre>
+
+<h2 id="private-notes">Private Notes</h2>
+
+<p>To keep some notes private (not published on your website):</p>
+
+<ol>
+  <li><strong>Create a folder</strong> inside <code class="highlighter-rouge">_notes</code> (e.g., <code class="highlighter-rouge">_notes/Private/</code>)</li>
+  <li><strong>Add the folder to <code class="highlighter-rouge">.gitignore</code></strong>:
+    <pre><code class="language-gitignore">_notes/Private/
+</code></pre>
+  </li>
+  <li><strong>Set <code class="highlighter-rouge">feed: "hide"</code></strong> in the note’s front matter</li>
+</ol>
+
+<p>This way, private notes stay in your Obsidian vault but won’t be synced to Git or built as pages in Jekyll.</p>
+
+<h2 id="workflow">Workflow</h2>
+
+<ol>
+  <li><strong>Write notes</strong> in Obsidian using the <code class="highlighter-rouge">_notes</code> folder</li>
+  <li><strong>Use [[Wiki Links]]</strong> to connect your notes</li>
+  <li><strong>Add proper front matter</strong> to each note</li>
+  <li><strong>Commit and push</strong> to publish changes</li>
+  <li><strong>Your website updates</strong> automatically</li>
+</ol>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li><strong>Keep Obsidian and Jekyll in sync</strong>: The <code class="highlighter-rouge">_notes</code> folder is your single source of truth</li>
+  <li><strong>Use descriptive titles</strong>: They become your URLs and link targets</li>
+  <li><strong>Test locally</strong>: Run <code class="highlighter-rouge">bundle exec jekyll serve</code> to preview changes</li>
+  <li><strong>Backup regularly</strong>: Your notes are valuable - keep them safe</li>
+</ul>
+
+<h2 id="external-resources">External Resources</h2>
+
+<ul>
+  <li><a href="https://obsidian.md/help">Obsidian Documentation</a></li>
+  <li><a href="https://jekyllrb.com/docs/">Jekyll Documentation</a></li>
+  <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+</ul>
+
+<hr />
+
+<p><em>This setup gives you the best of both worlds: powerful note-taking in Obsidian and beautiful publishing with Jekyll Garden.</em></p>
+:ET

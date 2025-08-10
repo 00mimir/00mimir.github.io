@@ -1,0 +1,82 @@
+I"<p>You can customize your Jekyll Garden site by editing a few key files.</p>
+
+<h2 id="basic-settings">Basic Settings</h2>
+
+<p>Edit <code class="highlighter-rouge">_config.yml</code> to change your site information:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">My</span><span class="nv"> </span><span class="s">Digital</span><span class="nv"> </span><span class="s">Garden"</span>
+<span class="na">heading</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Name"</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">brief</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">site"</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://yoursite.com"</span>
+</code></pre></div></div>
+
+<h2 id="menu-items">Menu Items</h2>
+
+<p>Add or change navigation menu items:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">menu</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Notes"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/notes"</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">About"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/about"</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Blog"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/blog"</span>
+</code></pre></div></div>
+
+<h2 id="theme-preferences">Theme Preferences</h2>
+
+<p>Control which features are enabled:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">preferences</span><span class="pi">:</span>
+  <span class="na">homepage</span><span class="pi">:</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>      <span class="c1"># Show custom homepage</span>
+  <span class="na">search</span><span class="pi">:</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>      <span class="c1"># Enable search</span>
+  <span class="na">backlinks</span><span class="pi">:</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>      <span class="c1"># Show backlinks</span>
+</code></pre></div></div>
+
+<h2 id="colors-and-fonts">Colors and Fonts</h2>
+
+<p>Change the look by editing <code class="highlighter-rouge">assets/css/style.css</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--primary-color</span><span class="p">:</span> <span class="m">#007acc</span><span class="p">;</span>
+  <span class="py">--text-color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="py">--background-color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="py">--font-family</span><span class="p">:</span> <span class="n">-apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="dark-mode">Dark Mode</h2>
+
+<p>The theme includes automatic dark mode support. Users can toggle between light and dark themes, and their preference is saved.</p>
+
+<h2 id="custom-fonts">Custom Fonts</h2>
+
+<p>Add custom fonts by importing them in the CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap')</span><span class="p">;</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--font-family</span><span class="p">:</span> <span class="s2">'Inter'</span><span class="p">,</span> <span class="n">-apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="layout-changes">Layout Changes</h2>
+
+<p>For advanced customization, you can modify files in the <code class="highlighter-rouge">_layouts/</code> folder. But remember to keep it simple - focus on content over complex styling.</p>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li>Start with basic settings in <code class="highlighter-rouge">_config.yml</code></li>
+  <li>Test changes locally before deploying</li>
+  <li>Keep customization minimal for better performance</li>
+  <li>Use the [[Deployment]] guide when you’re ready to publish</li>
+</ul>
+
+<hr />
+
+<p><em>Customization should enhance your content, not distract from it.</em></p>
+:ET

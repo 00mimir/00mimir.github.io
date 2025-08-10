@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="00mimir" property="og:site_name" />
+    <meta content="Quack quack" property="og:description">
+    <meta content="http://localhost:4000/about/" property="article:author"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"><meta content="Blog" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://localhost:4000/blog" property="og:url"><title>Blog -00mimir</title>
+    <link rel="canonical" href="http://localhost:4000/blog" /><link rel="apple-touch-icon" href="/assets/img/profile.png"><link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" /><link href="/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" /><!--[if IE]><link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/><![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
+  </head>
+  <body>
+    <div class="container">
+      <div><nav class="nav">
+          <div class="nav-left">
+            <a href="/">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="8" width="16" height="16" rx="4" />
+              </svg>
+            </a>
+          </div>
+          <div class="nav-right">
+            <div class="dropdown">
+              <div class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="dropdown-menu"><a href="/notes">Notes</a><a href="/blog">Blog</a><a href="/about">About</a></div>
+            </div>
+          </div>
+        </nav>
+        <script>
+          const hamburger = document.querySelector('.hamburger');
+          const dropdown = document.querySelector('.dropdown');
+          
+          hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            dropdown.classList.toggle('active');
+          });
+          
+          document.addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown')) {
+              hamburger.classList.remove('active');
+              dropdown.classList.remove('active');
+            }
+          });
+        </script><!-- Homepage Layout--><!--- Notes Feed Layout--><!--- Notes Layout--><!--- Post Layout--><!--- Static Page Layout-->
+        <h1>Blog</h1>
+        <div class="content">
+          <p>Meus posts</p>
+          <h3 id="blog-posts-de-2024">Blog posts de 2024</h3>
+          <ul>
+            <li>[[Um resumo das minhas leituras de 2024]]</li>
+            <li>[[Some thoughts after finishing first ASOIAF reread]]</li>
+          </ul>
+        </div>
+        <script>
+          // Process wiki links after page load, excluding code blocks
+          document.addEventListener('DOMContentLoaded', function() {
+              const contentDiv = document.querySelector('.content');
+              if (!contentDiv) return;
+          
+              // Get all available notes for link resolution
+              const availableNotes = [];
+          
+              // Function to find note by title (case-insensitive)
+              function findNoteByTitle(title) {
+                  return availableNotes.find(note =>
+                      note.title.toLowerCase() === title.toLowerCase()
+                  );
+              }
+          
+              // Function to process wiki links in text nodes only
+              function processWikiLinks(node) {
+                  if (node.nodeType === Node.TEXT_NODE) {
+                      // Only process text nodes that are not inside code elements
+                      let parent = node.parentElement;
+                      while (parent) {
+                          if (parent.tagName === 'CODE' || parent.tagName === 'PRE' ||
+                              parent.classList.contains('highlighter-rouge') ||
+                              parent.classList.contains('highlight')) {
+                              return; // Skip if inside code
+                          }
+                          parent = parent.parentElement;
+                      }
+          
+                      // Process wiki links in this text node
+                      const text = node.textContent;
+                      const wikiLinkRegex = /\[\[([^\]]+)\]\]/g;
+                      let match;
+                      let lastIndex = 0;
+                      const fragments = [];
+          
+                      while ((match = wikiLinkRegex.exec(text)) !== null) {
+                          // Add text before the match
+                          if (match.index > lastIndex) {
+                              fragments.push(document.createTextNode(text.slice(lastIndex, match.index)));
+                          }
+          
+                          const linkText = match[1];
+                          const linkSpan = document.createElement('span');
+          
+                          // Check if it's an external link (contains ::)
+                          if (linkText.includes('::')) {
+                              const [title, url] = linkText.split('::');
+                              const link = document.createElement('a');
+                              link.href = url;
+                              link.target = '_blank';
+                              link.rel = 'noopener';
+                              link.textContent = title;
+                              linkSpan.appendChild(link);
+                          } else {
+                              // Internal link - try to find the note
+                              const foundNote = findNoteByTitle(linkText);
+                              const link = document.createElement('a');
+          
+                              if (foundNote) {
+                                  link.href = foundNote.url;
+                                  link.textContent = linkText;
+                                  link.className = 'wiki-link';
+          
+                                  // Add hover preview functionality
+                                  link.addEventListener('mouseenter', function() {
+                                      showPreview(this, foundNote.title, foundNote.excerpt);
+                                  });
+          
+                                  link.addEventListener('mouseleave', function() {
+                                      hidePreview();
+                                  });
+                              } else {
+                                  // Note doesn't exist - create a placeholder
+                                  link.href = 'javascript:void(0)';
+                                  link.textContent = linkText;
+                                  link.className = 'stale-link';
+                                  link.title = 'Note not found: ' + linkText;
+                              }
+          
+                              linkSpan.appendChild(link);
+                          }
+          
+                          fragments.push(linkSpan);
+                          lastIndex = match.index + match[0].length;
+                      }
+          
+                      // Add remaining text
+                      if (lastIndex < text.length) {
+                          fragments.push(document.createTextNode(text.slice(lastIndex)));
+                      }
+          
+                      // Replace the text node with fragments if we found wiki links
+                      if (fragments.length > 0) {
+                          const parent = node.parentNode;
+                          fragments.forEach(fragment => parent.insertBefore(fragment, node));
+                          parent.removeChild(node);
+                      }
+                  } else if (node.nodeType === Node.ELEMENT_NODE) {
+                      // Recursively process child nodes
+                      const children = Array.from(node.childNodes);
+                      children.forEach(child => processWikiLinks(child));
+                  }
+              }
+          
+              // Function to show hover preview
+              function showPreview(link, title, excerpt) {
+                  // Remove any existing preview
+                  hidePreview();
+          
+                  const preview = document.createElement('div');
+                  preview.className = 'link-preview';
+                  preview.innerHTML = `
+                      <div class="preview-content">
+                          <strong>${title}</strong>
+                          <p>${excerpt}</p>
+                      </div>
+                  `;
+          
+                  document.body.appendChild(preview);
+          
+                  // Position the preview near the link
+                  const rect = link.getBoundingClientRect();
+                  preview.style.position = 'fixed';
+                  preview.style.left = rect.left + 'px';
+                  preview.style.top = (rect.bottom + 5) + 'px';
+                  preview.style.zIndex = '1000';
+              }
+          
+              // Function to hide hover preview
+              function hidePreview() {
+                  const existingPreview = document.querySelector('.link-preview');
+                  if (existingPreview) {
+                      existingPreview.remove();
+                  }
+              }
+          
+              // Process all nodes in the content
+              processWikiLinks(contentDiv);
+          });
+        </script> <!--- Blog Feed Layout-->
+        <div class="related-wrapper">
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <h6>
+              © 2024 Your Name. Contents under CC-BY-NC• <a href="/credits">Credits</a></h6>
+          </div>
+          <div class="footer-right">
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <svg viewBox="0 0 14 14" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="5"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <script>
+          // Theme toggle
+          const themeToggle = document.querySelector('.theme-toggle');
+          const root = document.documentElement;
+          
+          function setTheme(theme) {
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+          }
+          
+          // Initial theme
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme) {
+            setTheme(savedTheme);
+          }
+          
+          themeToggle.addEventListener('click', function() {
+            const isDark = root.getAttribute('data-theme') === 'dark';
+            setTheme(isDark ? 'light' : 'dark');
+          });
+        </script></div>
+    </div>
+  </body>
+</html> 

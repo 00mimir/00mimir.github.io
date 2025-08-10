@@ -1,0 +1,84 @@
+I"�<p>Once you’ve set up your Jekyll Garden site, here’s how to publish it online.</p>
+
+<h2 id="github-pages-free">GitHub Pages (Free)</h2>
+
+<p>GitHub Pages is the easiest way to get started:</p>
+
+<ol>
+  <li><strong>Upload your files</strong> to a GitHub repository</li>
+  <li><strong>Enable GitHub Pages</strong> in repository settings</li>
+  <li><strong>Set source</strong> to “Deploy from a branch”</li>
+  <li><strong>Choose your main branch</strong> (usually <code class="highlighter-rouge">main</code> or <code class="highlighter-rouge">master</code>)</li>
+</ol>
+
+<p>Your site will be available at <code class="highlighter-rouge">https://yourusername.github.io/repository-name</code></p>
+
+<h2 id="netlify-free">Netlify (Free)</h2>
+
+<p>Netlify offers automatic deployments:</p>
+
+<ol>
+  <li><strong>Connect your GitHub repository</strong> to Netlify</li>
+  <li><strong>Set build command</strong>: <code class="highlighter-rouge">bundle exec jekyll build</code></li>
+  <li><strong>Set publish directory</strong>: <code class="highlighter-rouge">_site</code></li>
+  <li><strong>Deploy automatically</strong> when you push changes</li>
+</ol>
+
+<h2 id="vercel-free">Vercel (Free)</h2>
+
+<p>Vercel is another great option:</p>
+
+<ol>
+  <li><strong>Import your repository</strong> to Vercel</li>
+  <li><strong>Framework preset</strong>: Jekyll</li>
+  <li><strong>Deploy automatically</strong> on every push</li>
+</ol>
+
+<h2 id="local-testing">Local Testing</h2>
+
+<p>Test your site before deploying:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install
+</span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>Visit <code class="highlighter-rouge">http://localhost:4000</code> to see your site.</p>
+
+<h2 id="custom-domain">Custom Domain</h2>
+
+<p>Add your own domain in <code class="highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://yourdomain.com"</span>
+</code></pre></div></div>
+
+<p>Then configure your domain with your hosting provider.</p>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li><strong>Test locally first</strong>: Make sure everything works before deploying</li>
+  <li><strong>Check your links</strong>: Ensure all [[Wiki Links]] work correctly</li>
+  <li><strong>Optimize images</strong>: Compress images for faster loading</li>
+  <li><strong>Use HTTPS</strong>: Most hosting providers offer this automatically</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><strong>Site not updating?</strong></p>
+<ul>
+  <li>Check that your changes are pushed to the repository</li>
+  <li>Verify the build completed successfully</li>
+  <li>Clear your browser cache</li>
+</ul>
+
+<p><strong>Broken links?</strong></p>
+<ul>
+  <li>Ensure all note titles match exactly</li>
+  <li>Check that notes have <code class="highlighter-rouge">feed: "show"</code> in front matter</li>
+  <li>Rebuild your site after adding new notes</li>
+</ul>
+
+<hr />
+
+<p><em>Your digital garden is ready to share with the world!</em></p>
+:ET

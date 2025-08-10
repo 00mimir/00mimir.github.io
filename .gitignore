@@ -1,1 +1,6 @@
-_posts/2025-06-20-welcome-to-jekyll.markdown
+_site
+.jekyll-cache
+pages/.DS_Store
+pages/tags.md
+_notes/.obsidian
+_notes/Public/.obsidian

@@ -1,0 +1,85 @@
+I"r<p>This guide shows the essential markdown formatting you can use in your notes.</p>
+
+<h2 id="headings">Headings</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Main heading</span>
+<span class="gu">## Section heading</span>
+<span class="gu">### Subsection heading</span>
+</code></pre></div></div>
+
+<h2 id="text-formatting">Text Formatting</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ge">*Italic text*</span> or _italic text_
+<span class="gs">**Bold text**</span> or __bold text__
+<span class="sb">`inline code`</span>
+~~strikethrough~~
+</code></pre></div></div>
+
+<h2 id="lists">Lists</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> Unordered list item
+<span class="p">-</span> Another item
+<span class="p">  -</span> Nested item
+<span class="p">
+1.</span> Ordered list item
+<span class="p">2.</span> Another item
+</code></pre></div></div>
+
+<h2 id="links">Links</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link text</span><span class="p">](</span><span class="sx">https://example.com</span><span class="p">)</span>
+[[Wiki link to another note]]
+[[External link::https://example.com]]
+</code></pre></div></div>
+
+<h2 id="code-blocks">Code Blocks</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">javascript
+</span><span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello, World!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+## Blockquotes
+
+```markdown
+&gt; This is a blockquote.
+&gt; It can span multiple lines.
+</code></pre></div></div>
+
+<h2 id="tables">Tables</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header 1 | Header 2 |
+|----------|----------|
+| Content  | Content  |
+</code></pre></div></div>
+
+<h2 id="math-if-enabled">Math (if enabled)</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Inline math: $x = y$
+Block math: $$<span class="se">\i</span>nt_{-<span class="se">\i</span>nfty}^{<span class="se">\i</span>nfty} e^{-x^2} dx = <span class="se">\s</span>qrt{<span class="se">\p</span>i}$$
+</code></pre></div></div>
+
+<h2 id="images">Images</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt text</span><span class="p">](</span><span class="sx">/assets/img/image.jpg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">---
+</span></code></pre></div></div>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li>Use clear, descriptive headings</li>
+  <li>Keep paragraphs short and focused</li>
+  <li>Use [[Wiki Links]] to connect related notes</li>
+  <li>Don’t over-format - focus on readability</li>
+</ul>
+
+<hr />
+
+<p><em>This covers the most common markdown features you’ll need for your notes.</em></p>
+:ET
