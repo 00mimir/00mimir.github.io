@@ -4,6 +4,9 @@ feed: show
 date: 2024-01-15
 ---
 
+![[fevre_teste.jpg]]
+
+
 Desde que comprei o livro O Hobbit Anotado, antes mesmo de ler (mal comecei a ler o livro enquanto estou escrevendo esse documento), eu fiquei fascinado com a ideia de “anotar um livro”. Eu fiquei me perguntando como seria o processo; qual formato deveria utilizar; o que eu poderia colocar. 
 
 Nos últimos anos eu desenvolvi uma grande paixão por A Song of Ice and Fire, que começou com a série Game of Thrones e foi transferida para os livros. Desde então eu passo horas dos meus dias escutando podcasts, pensando na história e esperando o The Winds of Winter. Tal paixão chegou a um ponto que decidi que quero estudar os livros, outros trabalhos do autor e os trabalhos que influenciaram ele essa história que tanto passo tempo pensando. Estudar os livros da saga em si já representa um grande desafio, e estudar esse “material complementar” deixa a tarefa maior ainda.

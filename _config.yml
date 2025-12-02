@@ -36,7 +36,7 @@ preferences:
 
 # Site Configuration
 title: "00mimir"
-heading: "00mimir"
+heading: " 00mimir"
 description: "Quack quack"
 url: "https://00mimir.github.io/"
 baseurl: ""

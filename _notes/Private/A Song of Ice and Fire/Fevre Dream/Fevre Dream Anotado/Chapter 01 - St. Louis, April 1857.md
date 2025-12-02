@@ -1,0 +1,27 @@
+## St. Louis, April 1857
+
+O capítulo começa com Abner Marsh chegando ao hotel Planters’ House para uma reunião de negócios com Joshua York. 
+
+O balconista do hotel (clerk) o reconhece e comenta sobre o acidente em que Marsh esteve envolvido no último inverno. Abner fica incomodado com o comentário, desconversa e pede para o balconista indicar o quarto de York. O atendente informa que Joshua não está em seu quarto, e sim no salão de jantar, o que causa certa estranhamento em Marsh, visto que são 12:10 AM, horário que ele confirma tanto no relógio do hotel quanto no seu de bolso. O balconista responde dizendo que Joshua faz os seus próprios horários, e que ele não é do tipo de pessoa que se recusa algo.  
+
+Em seguida Marsh vai em direção ao salão de jantar e chega a mesa de York. A descrição desse primeiro encontro é muito interessante, principalmente quando Abner olha pela primeira vez nos olhos de Joshua:
+
+> Till the rest of his days were done, Abner Marsh remembered that moment, that first look into the eyes of Joshua York. Whatever thoughts he had had, whatever plans he had made, were sucked up in the maelstrom of York’s eyes. Boy and old man and dandy and foreigner, all those were gone in an instant, and there was only York, the man himself, the power of him, the dream, the intensity.
+> 
+> York’s eyes were gray, startlingly dark in such a pale face. His pupils were pinpoints, burning black, and they reached right into Marsh and weighed the soul inside him. The gray around them seemed alive, moving, like fog on the river on a dark night, when the banks vanish and the lights vanish and there is nothing in the world but your boat and the river and the fog. In those mists, Abner Marsh saw things; visions swift-glimpsed and then gone. There was a cool intelligence peering out of those mists. But there was a beast as well, dark and frightening, chained and angry, raging at the fog. Laughter and loneliness and cruel passion; York had all of that in his eyes.
+> 
+> But mostly there was force in those eyes, terrible force, a strength as relentless and merciless as the ice that had crushed Marsh’s dreams. Somewhere in that fog, Marsh could sense the ice moving, slow, so slow, and he could hear the awful splintering of his boats and all his hopes.
+
+Essas passagens falam muito sobre Joshua York que chega a ser impressionante a quantidade de informações que o George nos oferece tão cedo no livro. 
+
+George faz proveito da ideia de os olhos serem a janela da alma e nos transmite tudo o que Joshua é: forte, intenso, inteligente, um sonhador que dentro de si tem alegria, solidão e uma paixão cruel, e no meio de tudo isso, no meio da neblina que o cinza dos seus olhos representam, há uma besta aprisionada e com raiva. 
+
+Joshua York é o primeiro vampiro que conhecemos na história. Cada detalhe que George nos deu vai ser construído junto com a narrativa e vai ocupar o centro da narrativa:  desde o balconista nos falar que York faz os seus próprios horários e que é do tipo de pessoa que não se diz não, até a troca de olhares com Marsh.
+
+Depois dessa troca de olhares intenso, Abner se acomoda e aceita jantar com Joshua e vão direto ao assunto. Marsh é dono de uma empresa de transporte de carga chamada de *The Fevre River Packet Company* e York quer comprar metade da empresa por um valor muito acima do mercado. Isso deixa Abner muito desconfiado e ele começa a conta a história dele nesse mercado, falando que ele já foi de tudo, menos um pilantra. Apesar de ser um homem experiente no mercado, Marsh sofreu um acidente no último inverno que manchou a sua reputação, o que deixa a oferta mais estranha ainda. 
+
+Isso faz com que Joshua explique um pouco melhor os seus objetivos com esse empreendimento: ele quer privacidade e liberdade para alcançar um sonho, e um barco a vapor viabilizaria isso. E para isso ele precisa de um sócio que conheça o negócio, que discreto e que aceite os hábitos peculiares, e que não deixe que isso vire assunto entre a tripulação e os viagens. Alguém que receba os seus convidados e amigos e que não questione as suas decisões. Joshua não quer ser simplesmente um sócio, mas também quer ser capitão. Quer aprender mais sobre o negócio e eventualmente pilotar o barco.
+
+Abner está interessado na proposta, mas ele diz que não tem o barco para isso. O Eli Reynolds não consegue oferecer o luxo que Joshua aparentemente está esperando, e é ai que York fala que não tem o Eli Reynolds em mente, e sim a construção de um novo barco. Marsh pergunta quanto ele pode gastar na construção, e York responde que investirá o quanto for necessário. Para provar que tem os recursos necessários, Joshua o convida para o seu quarto, onde ele exibe um baú com 10000 dólares em moedas de ouro de 20 dólares. Além disso, Joshua diz que tem crédito em outros bancos caso seja necessário. 
+
+Aqui Marsh já foi fisgado, mas ainda está suspeitando de toda essa proposta. Ele sabe que esse tipo de proposta sempre vem com algum perigo. E já que ele está se arriscando, ele mira alto para tentar realizar um dos seus sonhos, e então convida Joshua para caminhar nas docas. Lá, ele apresenta o Eclipse, o maior e mais rápido barco do rio. Abner é obcecado por esse barco, já sendo tripulante dele só para conseguir analisar pessoalmente o barco. O sonho de Marsh é construir um barco que um dia vai ser capaz de ultrapassar o Eclipse. E nisso, ele e Joshua concordam em fazer.
