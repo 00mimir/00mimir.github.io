@@ -1,111 +1,34 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: "00mimir's blog"
+author: "00mimir"
+description: "My blog"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
 
-# Jekyll Garden Configuration
-# Optimized for actual template usage
+# Layout
 
-# Preferences (controls template behavior)
-preferences:
-  homepage:
-    enabled: false
-  search:
-    enabled: true
-  backlinks:
-    enabled: true
-  pagepreview:
-    enabled: true
-  wiki_style_link:
-    enabled: true
+show_excerpts: true             # show article excerpts instead of archive list on the home page
+show_frame: true                # display a grey frame on large screens
+show_sidebar: false             # show a sidebar instead of the usual header
+show_minimal: false             # remove all clutter
 
-# Site Configuration
-title: "00mimir"
-heading: " 00mimir"
-description: "Quack quack"
-url: "https://00mimir.github.io/"
-baseurl: ""
+#show_frame: "/assets/images/background.svg"
 
-# Asset Configuration
-apple_touch_icon: "/assets/img/profile.png"
-css_file: "/assets/css/style.css"
-ie_css: "/assets/css/ie-target.css"
+# Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
-# Menu Items
-menu:
-  - title: "Notes"
-    url: "/notes"
-  - title: "Blog"
-    url: "/blog"
-  - title: "About"
-    url: "/about"
+navigation:                     # accepts {file, title, url, icon, sidebaricon}
+  - {file: "archive.html", sidebaricon: home}
+  - {file: "README.md", sidebaricon: address-card}
 
-# Footer
-footer:
-  copyright: "© 2025 00mimir."
-  credits:
-    enabled: true
-    url: "/credits"
-    text: "Credits"
+external:                       # accepts {file, title, url, icon, sidebaricon}
+  - {title: Mail, icon: envelope, url: "mailto:00mimir@tuta.io"}
+  - {title: Github, icon: github, url: "https://github.com/00mimir/00mimir.github.io"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-# Collections
-collections:
-  notes:
-    output: true
-    permalink: /:collection/:name
+comments:
+#  disqus_shortname: ""         # see https://disqus.com
+#  isso_domain: ""              # see https://isso-comments.de
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "notes"
-    values:
-      layout: "Post"
-      content-type: "notes"
-      feed: "show"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "Post"
-      content-type: "post"
-      feed: "show"
-      permalink: /blog/:title/
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# Private links (for broken wiki links)
-privatelinks:
-  title: "Private Note"
-  msg: "This note hasn't been published yet."
-
-# Math rendering
-katex: true
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+ - jekyll-feed
